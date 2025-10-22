@@ -153,3 +153,15 @@ SOCIALACCOUNT_PROVIDERS = {
         }
     }
 }
+
+# Faz com que depois do login você seja redirecionado a aba de membros
+LOGIN_REDIRECT_URL = '/members'
+
+# Faz com que quando entrar na aba de accounts/login já seja direcionado para aba de login do próprio provedor
+SOCIALACCOUNT_LOGIN_ON_GET = True
+
+# Faz com que ao precionar para sair seja
+ACCOUNT_LOGOUT_ON_GET = True
+
+# Redireciona o usuário após o logout da aplicação
+LOGOUT_REDIRECT_URL = "/"
